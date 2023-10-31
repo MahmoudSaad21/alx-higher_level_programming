@@ -7,17 +7,17 @@
 */
 int check_cycle(listint_t *list)
 {
-listint_t *turtle, *hare;
+listint_t *one, *two;
 if (list == NULL || list->next == NULL)
 return (0);
-turtle = list->next;
-hare = list->next->next;
-while (turtle && hare && hare->next)
+one = list->next;
+two= list->next->next;
+while (one != NULL && two != NULL && two->next != NULL)
 {
-if (turtle == hare)
+if (one == two)
 return (1);
-turtle = turtle->next;
-hare = hare->next->next;
+one = one->next;
+two = two->next->next;
 }
 return (0);
 }
