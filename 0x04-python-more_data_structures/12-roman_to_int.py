@@ -6,7 +6,6 @@ def roman_to_int(roman_string):
     prev_value = 0
     if roman_string is None or type(roman_string) is not str:
         return 0
-    
     for char in reversed(roman_string):
         val = roman_numerals.get(char, 0)
         if val >= prev_value:
@@ -15,3 +14,4 @@ def roman_to_int(roman_string):
             res -= val
         prev_value = val
     return res
+    
