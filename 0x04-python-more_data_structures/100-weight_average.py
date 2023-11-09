@@ -6,4 +6,4 @@ def weight_average(my_list=[]):
     return sum([mul(x[0], x[1]) for x in my_list]) / sum(x[1] for x in my_list)
 # mul - returns x*y.
 def mul(x, y):
-    return x * y
+    return x*y
