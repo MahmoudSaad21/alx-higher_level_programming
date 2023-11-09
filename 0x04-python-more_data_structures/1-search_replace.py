@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# replaces all occurences of an element by another.
+# search_replace - replaces all occurences of an element by another.
 def search_replace(my_list, search, replace):
     new_list=[]
     for i in my_list:
@@ -7,4 +7,4 @@ def search_replace(my_list, search, replace):
             new_list.append(replace)
         else:
             new_list.append(i)
-    return my_list
+    return new_list
