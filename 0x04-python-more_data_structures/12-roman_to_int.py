@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
       sum = sum + 1
     elif i == 'V':
       sum = sum + 5
-    elif i == 'x':
+    elif i == 'X':
       sum = sum + 10
     elif i == 'L':
       sum = sum + 50
