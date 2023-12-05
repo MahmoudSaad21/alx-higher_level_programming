@@ -19,5 +19,5 @@ if __name__ == "__main__":
         a_list = []
 
     for arg in sys.argv[1:]:
-        _list.append(arg)
+        a_list.append(arg)
     save_to_json_file(a_list, name)
