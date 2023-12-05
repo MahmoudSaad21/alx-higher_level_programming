@@ -11,7 +11,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 f_name = "add_item.json"
 
-try:
+if path.exists(f_name):
     a_list = load_from_json_file(f_name)
 
 a_list = []
