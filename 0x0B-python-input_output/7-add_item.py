@@ -12,11 +12,11 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
 f_name = "add_item.json"
+a_list = []
 
 if os.path.exists(f_name):
     a_list = load_from_json_file(f_name)
 
-a_list = []
 
 for arg in sys.argv[1:]:
     a_list.append(arg)
