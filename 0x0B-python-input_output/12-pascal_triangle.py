@@ -2,7 +2,6 @@
 """Defines a Pascal's Triangle function."""
 
 
-
 def pascal_triangle(n):
     """returns a list of lists of integers"""
     rows = [[1 for j in range(i + 1)] for i in range(n)]
