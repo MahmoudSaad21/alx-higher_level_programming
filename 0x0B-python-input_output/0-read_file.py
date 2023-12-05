@@ -4,7 +4,6 @@
 """
 
 
-
 def read_file(filename=""):
     """read_file reads text file and prints it"""
     with open(filename, 'r') as files:
