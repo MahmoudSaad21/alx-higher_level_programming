@@ -83,8 +83,12 @@ class Rectangle(Base):
                                                        self.x, self.y,
                                                        self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """assigns key/value argument to attributes"""
-        attributes = ["id", "width", "height", "x", "y"]
-        for i, value in enumerate(args):
-            setattr(self, attributes[i], value)
+        if args:  # If positional arguments exist, update attributes using them
+            attributes = ["id", "width", "height", "x", "y"]
+            for i, value in enumerate(args):
+                setattr(self, attributes[i], value)
+        else:  # If no positional arguments, update using keyword arguments
+            for key, value in kwargs.items():
+                setattr(self, key, value)
