@@ -49,6 +49,9 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Return a class instantied from a dictionary of attributes."""
-        dummy_instance = cls(1, 1)
+        if cls.__name__ == "Rectangle":
+            dummy_instance = cls(1, 1)
+        else:
+            dummy_instance = cls(1)
         dummy_instance.update(**dictionary)
         return dummy_instance
