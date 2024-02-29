@@ -4,7 +4,7 @@
 def find_peak(list_of_integers):
     """Finds a peak in list_of_integers"""
     if not list_of_integers:
-        return None    
+        return None
     left = 0
     right = len(list_of_integers) - 1
     
@@ -14,5 +14,4 @@ def find_peak(list_of_integers):
             left = mid + 1
         else:
             right = mid
-    
     return list_of_integers[left]or list_of_integers
